@@ -29,8 +29,6 @@ const Inner = styled.div`
 `;
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap');
-
   html {
     box-sizing: border-box;
     font-size: 10px;

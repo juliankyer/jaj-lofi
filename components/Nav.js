@@ -6,11 +6,8 @@ const Nav = () => (
     <Link href='/'>
       <a>HOME</a>
     </Link>
-    <Link href='/sell'>
-      <a>SELL</a>
-    </Link>
-    <Link href='/about'>
-      <a>ABOUT</a>
+    <Link href='/shop'>
+      <a>SHOP</a>
     </Link>
     <Link href='/process'>
       <a>PROCESS</a>
@@ -18,8 +15,11 @@ const Nav = () => (
     <Link href='contact'>
       <a>CONTACT</a>
     </Link>
-    <Link>
+    <Link href='/cart'>
       <a>CART</a>
+    </Link>
+    <Link href='/signup'>
+      <a>SIGN UP</a>
     </Link>
   </StyledNav>
 );

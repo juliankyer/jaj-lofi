@@ -1,7 +1,21 @@
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 import Nav from './Nav';
 import styled from 'styled-components';
 // import logo from '../static/ja-logo.png';
+
+Router.onRouteChangeStart = () => {
+  NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => {
+  NProgress.done();
+};
+
+Router.onRouteChangeError = () => {
+  NProgress.done();
+};
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -24,6 +38,7 @@ const Header = () => {
     <StyledHeader>
       <Link href='/'>
         <a className='header-logo'>
+          {/* TODO -- add logo */}
           {/* <img src={logo} alt='jennifer amy jewelry logo' /> */}
           <p>Logo</p>
         </a>

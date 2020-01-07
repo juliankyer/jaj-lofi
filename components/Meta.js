@@ -6,6 +6,7 @@ const Meta = () => (
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="/static/ja-logo.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600&display=swap" rel="stylesheet" />
     <title>Jennifer Amy Jewelry</title>
   </Head>
 );
