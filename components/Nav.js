@@ -1,15 +1,29 @@
 import Link from 'next/link';
+import styled from 'styled-components';
+
+const StyledNav = styled.nav`
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
+  a {
+    color: #2d2926;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 700;
+  }
+`;
 
 const Nav = () => (
-  <nav>
+  <StyledNav>
     <Link href='/'>
       <a>HOME</a>
     </Link>
     <Link href='/sell'>
       <a>SELL</a>
     </Link>
-
-    {/* TODO: set up these 3 routes */}
     <Link href='/about'>
       <a>ABOUT</a>
     </Link>
@@ -19,7 +33,7 @@ const Nav = () => (
     <Link href='contact'>
       <a>CONTACT</a>
     </Link>
-  </nav>
+  </StyledNav>
 );
 
 export default Nav;
