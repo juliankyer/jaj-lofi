@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import Link from 'next/link';
 
-class Home extends Component {
-  render() {
-    return (
-      <div>
-        home
-      </div>
-    );
-  }
-}
+const Home = props => {
+  return (
+    <div>
+      <p>home </p>
+    </div>
+  );
+};
 
 export default Home;
