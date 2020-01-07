@@ -1,20 +1,5 @@
 import Link from 'next/link';
-import styled from 'styled-components';
-
-const StyledNav = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-
-  a {
-    color: #2d2926;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 10px;
-    padding: 10px;
-    font-weight: 700;
-  }
-`;
+import StyledNav from './styles/StyledNav';
 
 const Nav = () => (
   <StyledNav>
@@ -32,6 +17,9 @@ const Nav = () => (
     </Link>
     <Link href='contact'>
       <a>CONTACT</a>
+    </Link>
+    <Link>
+      <a>CART</a>
     </Link>
   </StyledNav>
 );

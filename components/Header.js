@@ -25,6 +25,7 @@ const Header = () => {
       <Link href='/'>
         <a className='header-logo'>
           {/* <img src={logo} alt='jennifer amy jewelry logo' /> */}
+          <p>Logo</p>
         </a>
       </Link>
       <Nav />
