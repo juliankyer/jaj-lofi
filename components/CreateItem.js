@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
+import gql from 'graphql-tag';
 import Form from './styles/Form';
 import formatMoney from '../lib/formatMoney';
 
 const CREATE_ITEM_MUTATION = gql`
-  mutation CREATE_ITEM_MUTATION {
+  mutation CREATE_ITEM_MUTATION(
+    $title: String!
+    $description: String!
+    $price: Int!
+    $image: String
+    $largeImage: String
+  ) {
     createItem(
-      title
-      price
-      description
-      image
-      largeImage
-    )
+      title: $title
+      price: $price
+      description: $description
+      image: $image
+      largeImage: $largeImage
+    ) {
+      id
+    }
   }
 `;
 
@@ -33,42 +42,46 @@ class CreateItem extends Component {
 
   render() {
     return (
-      <Form onSubmit={e => {
-        e.preventDefault();
-      }}>
-        <label htmlFor='title'>
-          Title
-          <input
-            type='text' 
-            id='title' 
-            name='title' 
-            placeholder='Title' 
-            required
-            value={this.state.title}
-            onChange={this.handleChange}
-          />
-          <input
-            type='description' 
-            id='description' 
-            name='description' 
-            placeholder='Description' 
-            required
-            value={this.state.description}
-            onChange={this.handleChange}
-          />
- 
-          <input
-            type='number' 
-            id='price' 
-            name='price' 
-            placeholder='Price' 
-            required
-            value={this.state.price}
-            onChange={this.handleChange}
-          />
-        </label>
-        <button type='Submit'>Submit</button>
-      </Form>
+      <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
+        {(createItem, { loading, error}) => (
+          <Form onSubmit={e => {
+            e.preventDefault();
+          }}>
+            <label htmlFor='title'>
+              Title
+              <input
+                type='text' 
+                id='title' 
+                name='title' 
+                placeholder='Title' 
+                required
+                value={this.state.title}
+                onChange={this.handleChange}
+              />
+              <input
+                type='description' 
+                id='description' 
+                name='description' 
+                placeholder='Description' 
+                required
+                value={this.state.description}
+                onChange={this.handleChange}
+              />
+    
+              <input
+                type='number' 
+                id='price' 
+                name='price' 
+                placeholder='Price' 
+                required
+                value={this.state.price}
+                onChange={this.handleChange}
+              />
+            </label>
+            <button type='Submit'>Submit</button>
+          </Form>
+        )}
+      </Mutation>
     );
   }
 }
