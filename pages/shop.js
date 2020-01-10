@@ -1,11 +1,4 @@
-import Link from 'next/link';
+import Home from './index';
+// this is how each page gets the same look, will need something for parallax
 
-const Shop = () => {
-  return (
-    <div>
-      <p>shop page</p>
-    </div>
-  );
-};
-
-export default Shop;
+export default Home;

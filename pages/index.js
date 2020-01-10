@@ -1,9 +1,10 @@
-import Link from 'next/link';
+import Items from '../components/Items';
+// home layout is for the store, not information
 
 const Home = props => {
   return (
     <div>
-      <p>home </p>
+      <Items />
     </div>
   );
 };
