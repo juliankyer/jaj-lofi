@@ -23,6 +23,7 @@ class Item extends Component {
             <a>{item.title}</a>
           </Link>
         </h3>
+        {/* TODO -- this should be visible on item details */}
         {/* <PriceTag>{formatMoney(item.price)}</PriceTag> */}
         <p>{item.description}</p>
         <div className='button-list'>

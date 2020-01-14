@@ -1,9 +1,10 @@
 import UpdateItem from '../components/UpdateItem';
 
-const Update = ({ query }) => (
+const Update = (props) => (
   <div>
-    <UpdateItem id={query.id} />
+    <UpdateItem id={props.query.id} />
   </div>
 );
 
+// is this supposed to be sell?
 export default Update;

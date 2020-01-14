@@ -10,9 +10,9 @@ const SINGLE_ITEM_QUERY = gql`
   query SINGLE_ITEM_QUERY($id: ID!) {
     item(where: { id: $id }) {
       id
-      title
-      description
-      price
+      # title
+      # description
+      # price
     }
   }
 `;
@@ -50,8 +50,10 @@ class UpdateItem extends Component {
   render() {
     return (
       <Query query={SINGLE_ITEM_QUERY} variables={{ id: this.props.id }}>
-        {(data, loading) => {
-          if(loading) return <p>Loading...</p>
+        {({data, loading}) => {
+          console.log(data);
+          
+          if(loading) return <p>Loading...</p>;
           return (
             <Mutation mutation={UPDATE_ITEM_MUTATION} variables={this.state}>
               {(updateItem, { loading, error}) => (
