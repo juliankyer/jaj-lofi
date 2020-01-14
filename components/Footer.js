@@ -26,6 +26,10 @@ const StyledFooter = styled.footer`
       align-items: center;
       justify-content: center;
       margin: 10px 0;
+
+      .footer__phone-number {
+        text-decoration: underline;
+      }
     }
   }
   
@@ -46,8 +50,8 @@ const Footer = () => {
       <section className='footer__interactive'>
 
         <div className='footer__link--wrapper footer__link--consult'>
-          <p className='footer__label'>Call me to set up a consultation</p>
-          <a href="tel: 949-784-9719">949-784-9719</a>
+          <p className='footer__label'>Call me to set up a consultation:</p>
+          <a className='footer__phone-number' href="tel: 949-784-9719">949-784-9719</a>
         </div>
 
         <div className='footer__link--wrapper footer__link--instagram'>

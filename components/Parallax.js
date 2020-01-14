@@ -11,21 +11,25 @@ const StyledParallax = styled.div`
 
 .plx__img-wrapper--first {
   clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-  /* background-image: url('../../assets/images/heroA.jpg'); */
+  background-color: #15c3d1; 
+  /* background-image: url('../assets/images/heroA.jpg'); */
   /* temp */
   height: 400px;
 }
 
 .plx__img-wrapper--middle {
   clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-  /* background-image: url('../../assets/images/heroB.jpg'); */
+  background-color: #15c3d1; 
+  /* background-image: url('../assets/images/heroB.jpg'); */
   /* temp */
   height: 400px;
 }
 
 .plx__img-wrapper--last {
   clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-  /* background-image: url('../../assets/images/heroC.jpg'); */
+  background-color: #15c3d1; 
+  color: #15c3d1; 
+  /* background-image: url('../assets/images/heroC.jpg'); */
   /* temp */
   height: 400px;
 }
@@ -67,9 +71,6 @@ const Parallax = () => {
           <i>"Maybe it's not about the happy ending. Maybe it's about the story.”</i>
         </p>
         <p>Every experience leaves a memory. The defining moments in life are what creates an ever lasting memory. Working with Jennifer Amy will create the high end personal experience that everyone dreams for, using her deep connections and hand selected pieces from a private jeweler.</p>
-        {/* <p className='quote'>
-          <i>"The real power of a man is in the size of the smile of the woman sitting next to him.”</i>
-        </p> */}
       </div>
 
       <div className='plx__img-wrapper plx__img-wrapper--middle'>

@@ -1,10 +1,9 @@
-import Items from '../components/Items';
-// home layout is for the store, not information
+import Parallax from '../components/Parallax';
 
 const Home = props => {
   return (
     <div>
-      <Items />
+      <Parallax />
     </div>
   );
 };

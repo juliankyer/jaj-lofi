@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
+import Footer from './Footer';
 import Meta from './Meta';
 
 // this gets passed everywhere
@@ -22,6 +23,7 @@ const StyledPage = styled.div`
 
 // TODO -- this should only be applied to non-parallax pages... probably
 // at the very least, it should be different based on whether or not a page is parallax or store
+// there should be a padded page for shop
 const Inner = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
@@ -59,7 +61,9 @@ class Page extends Component {
         <StyledPage>
           <Meta />
           <Header />
-          <Inner>{this.props.children}</Inner>
+          {/* <Inner>{this.props.children}</Inner> */}
+            <div>{this.props.children}</div>
+          <Footer />
         </StyledPage>
       </ThemeProvider>
     );

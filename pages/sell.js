@@ -5,7 +5,7 @@ import React from 'react';
 const Sell = () => {
   return (
     <div>
-     <CreateItem /> 
+      <CreateItem /> 
     </div>
   );
 };

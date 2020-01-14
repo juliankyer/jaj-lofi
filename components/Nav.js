@@ -3,17 +3,14 @@ import StyledNav from './styles/StyledNav';
 
 const Nav = () => (
   <StyledNav>
-    <Link href='/'>
+    {/* <Link href='/'>
       <a>HOME</a>
-    </Link>
+    </Link> */}
     <Link href='/shop'>
       <a>SHOP</a>
     </Link>
     <Link href='/sell'>
       <a>SELL</a>
-    </Link>
-    <Link href='/process'>
-      <a>PROCESS</a>
     </Link>
     <Link href='contact'>
       <a>CONTACT</a>

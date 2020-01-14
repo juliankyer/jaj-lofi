@@ -1,4 +1,11 @@
-import Home from './index';
-// this is how each page gets the same look, will need something for parallax
+import Items from '../components/Items';
+
+const Home = props => {
+  return (
+    <div>
+      <Items />
+    </div>
+  );
+};
 
 export default Home;
