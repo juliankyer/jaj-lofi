@@ -42,6 +42,7 @@ injectGlobal`
 
   body {
     padding: 0;
+    margin: 0;
     font-family: 'Montserrat';
     font-size: 1.5rem;
     line-height: 2;
