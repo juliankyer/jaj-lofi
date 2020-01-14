@@ -33,6 +33,7 @@ const StyledHeader = styled.header`
 
     img {
       height: 90px;
+      margin-top: 4px;
     }
     margin: 0 20px;
   }
