@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Link href='/'>
-        <a className='header-logo'>
+        <a className='header-logo' title='Home'>
           <img src='../static/images/ja-logo.png' alt='jennifer amy jewelry logo' />
         </a>
       </Link>
