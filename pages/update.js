@@ -6,5 +6,4 @@ const Update = (props) => (
   </div>
 );
 
-// is this supposed to be sell?
 export default Update;
