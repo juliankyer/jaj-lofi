@@ -4,14 +4,18 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 2rem;
   color: $text-01;
 
+  p {
+    font-size: 1.3rem;
+  }
+
   .footer__logo {
-    width: 150px;
+    width: 200px;
   }
 
   .footer__interactive {
@@ -25,20 +29,19 @@ const StyledFooter = styled.footer`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 10px 0;
+
+      .footer__label {
+        margin: 0;
+      }
 
       .footer__phone-number {
         text-decoration: underline;
       }
     }
   }
-  
-  .footer__link {
-    height: 40px;
-  }
+
   .social-icon {
-    height: 40px;
-    margin-top: 8px;
+    height: 3rem;
   }
 `;
 
@@ -46,8 +49,8 @@ const Footer = () => {
   return (
     <StyledFooter>
       <img className='footer__logo' src='../static/ja-logo.png' />
-      <section className='footer__interactive'>
 
+      <section className='footer__interactive'>
         <div className='footer__link--wrapper footer__link--consult'>
           <p className='footer__label'>Call me to set up a consultation:</p>
           <a className='footer__phone-number' href="tel: 949-784-9719">949-784-9719</a>
