@@ -3,7 +3,6 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import Nav from './Nav';
 import styled from 'styled-components';
-// import logo from '../static/images/ja-logo.png';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -28,7 +27,13 @@ const StyledHeader = styled.header`
   justify-content: space-between; 
 
   .header-logo {
-    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 90px;
+    }
     margin: 0 20px;
   }
 `;
@@ -38,9 +43,7 @@ const Header = () => {
     <StyledHeader>
       <Link href='/'>
         <a className='header-logo'>
-          {/* TODO -- add logo */}
-          {/* <img src={logo} alt='jennifer amy jewelry logo' /> */}
-          <p>Logo</p>
+          <img src='../static/images/ja-logo.png' alt='jennifer amy jewelry logo' />
         </a>
       </Link>
       <Nav />

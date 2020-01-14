@@ -45,8 +45,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      {/* <img className='footer__logo' src={mainLogo} /> */}
-      <p>FOOTER LOGO</p>
+      <img className='footer__logo' src='../static/ja-logo.png' />
       <section className='footer__interactive'>
 
         <div className='footer__link--wrapper footer__link--consult'>
@@ -57,8 +56,7 @@ const Footer = () => {
         <div className='footer__link--wrapper footer__link--instagram'>
           <p className='footer__label'>Follow me on Instagram</p>
           <a href='https://instagram.com/jenamyjewelry' target='_blank' className='footer__link'>
-            {/* <img src={instaLogo} className='social-icon' /> */}
-            <p>INSTAGRAM</p>
+            <img src='../static/images/instagram-logo.png' className='social-icon' />
           </a>
         </div>
      </section>
