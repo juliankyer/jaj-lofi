@@ -3,7 +3,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import Nav from './Nav';
 import styled from 'styled-components';
-// import logo from '../static/ja-logo.png';
+// import logo from '../static/images/ja-logo.png';
 
 Router.onRouteChangeStart = () => {
   NProgress.start();

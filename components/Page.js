@@ -41,7 +41,6 @@ injectGlobal`
   }
 
   body {
-    margin: 100px 0 0 0;
     padding: 0;
     font-family: 'Montserrat';
     font-size: 1.5rem;

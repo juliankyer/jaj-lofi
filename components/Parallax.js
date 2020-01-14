@@ -11,27 +11,27 @@ const StyledParallax = styled.div`
 
 .plx__img-wrapper--first {
   clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-  background-color: #15c3d1; 
-  /* background-image: url('../assets/images/heroA.jpg'); */
+  /* background-color: #15c3d1;  */
+  background-image: url('/static/images/heroA.jpg');
   /* temp */
-  height: 400px;
+  /* height: 400px; */
 }
 
 .plx__img-wrapper--middle {
   clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-  background-color: #15c3d1; 
-  /* background-image: url('../assets/images/heroB.jpg'); */
+  /* background-color: #15c3d1;  */
+  background-image: url('/static/images/heroB.jpg');
   /* temp */
-  height: 400px;
+  /* height: 400px; */
 }
 
 .plx__img-wrapper--last {
   clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #15c3d1; 
   color: #15c3d1; 
-  /* background-image: url('../assets/images/heroC.jpg'); */
+  background-image: url('/static/images/heroC.jpg');
   /* temp */
-  height: 400px;
+  /* height: 400px; */
 }
 
 .plx__content {
