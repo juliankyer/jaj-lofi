@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const StyledNav = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: end;
   margin-right: 10px;
   font-size: 1.5rem;
 
@@ -60,7 +61,7 @@ const StyledNav = styled.nav`
   @media (max-width: 1300px) {
     border-top: 1px solid ${props => props.theme.text03};
     width: 100%;
-    justify-content: center;
+    justify-content: end;
     font-size: 1.5rem;
   }
 `;
