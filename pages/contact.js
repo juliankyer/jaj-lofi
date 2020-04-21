@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import Contact from "../components/Contact";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div>
-      <p>Contact page</p>
+      <Contact />
     </div>
   );
 };
 
-export default Contact;
+export default ContactPage;

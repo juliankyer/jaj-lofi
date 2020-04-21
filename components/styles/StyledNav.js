@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledNav = styled.nav`
   display: flex;
@@ -20,27 +20,24 @@ const StyledNav = styled.nav`
     border: 0;
     cursor: pointer;
     @media (max-width: 700px) {
-      font-size: 10px;
+      font-size: 12px;
       padding: 0 10px;
     }
     &:before {
-      content: '';
+      content: "";
       width: 2px;
-      /* background: ${props => props.theme.lightgrey}; */
       height: 100%;
       left: 0;
       position: absolute;
-      /* transform: skew(-20deg); */
       top: 0;
       bottom: 0;
     }
     &:after {
       height: 2px;
-      background: ${props => props.theme.brand01};
-      content: '';
+      background: ${(props) => props.theme.brand01};
+      content: "";
       width: 0;
       position: absolute;
-      /* TODO -- revisit this animation */
       transform: translateX(-50%);
       transition: width 0.5s;
       transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
@@ -53,18 +50,13 @@ const StyledNav = styled.nav`
       &:after {
         width: calc(100% - 60px);
       }
-    @media (max-width: 700px) {
-        width: calc(100% - 10px);
-    }
     }
   }
   @media (max-width: 1300px) {
-    border-top: 1px solid ${props => props.theme.text03};
-    width: 100%;
+    border-top: 1px solid ${(props) => props.theme.text03};
     justify-content: end;
     font-size: 1.5rem;
   }
 `;
-
 
 export default StyledNav;

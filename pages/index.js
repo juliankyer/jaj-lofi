@@ -1,11 +1,11 @@
-import Parallax from '../components/Parallax';
+import Home from "../components/Home";
 
-const Home = props => {
+const HomePage = (props) => {
   return (
     <div>
-      <Parallax />
+      <Home />
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
