@@ -63,16 +63,13 @@ const Home = () => {
       <div className="plx__content">
         <h3>Welcome to Your Bespoke Jeweler</h3>
         <p className="quote">
-          <i>
-            "Maybe it's not about the happy ending. Maybe it's about the story.”
-          </i>
+          <i>"Maybe it's not about the ending. Maybe it's about the story.”</i>
         </p>
         <p>
           Every experience leaves a memory. The defining moments in life are
-          what creates an ever lasting memory. Working with Jennifer Amy will
-          create the high end personal experience that everyone dreams for,
-          using her deep connections and hand selected pieces from a private
-          jeweler.
+          what create that memory. Working with Jennifer Amy will create the
+          high end personal experience that everyone dreams for using her deep
+          connections and hand selected pieces from a private jeweler.
         </p>
       </div>
 
@@ -86,9 +83,9 @@ const Home = () => {
       <div className="plx__content">
         <h3>Just for You</h3>
         <p>
-          Every story is different and every journey is unique. Trust Jennifer
-          Amy Jewelry to help you create engagement and wedding rings to match
-          your one-of-a-kind love.
+          The core value of Jennifer Amy Jewelry is to bestow the client with
+          the most elegant, suited, ring. This can mean a variety of things
+          including color, cost, and needs.
         </p>
       </div>
 
