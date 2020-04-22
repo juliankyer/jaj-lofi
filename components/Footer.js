@@ -1,6 +1,6 @@
 // import Link from 'next/link';
 // import Nav from './Nav';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -36,6 +36,7 @@ const StyledFooter = styled.footer`
 
       .footer__phone-number {
         text-decoration: underline;
+        color: ${(props) => props.theme.brand01};
       }
     }
   }
@@ -48,21 +49,30 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <img className='footer__logo' src='../static/ja-logo.png' />
+      <img className="footer__logo" src="../static/ja-logo.png" />
 
-      <section className='footer__interactive'>
-        <div className='footer__link--wrapper footer__link--consult'>
-          <p className='footer__label'>Call me to set up a consultation:</p>
-          <a className='footer__phone-number' href="tel: 949-784-9719">949-784-9719</a>
-        </div>
-
-        <div className='footer__link--wrapper footer__link--instagram'>
-          <p className='footer__label'>Follow me on Instagram</p>
-          <a href='https://instagram.com/jenamyjewelry' target='_blank' className='footer__link'>
-            <img src='../static/images/instagram-logo.png' className='social-icon' />
+      <section className="footer__interactive">
+        <div className="footer__link--wrapper footer__link--consult">
+          <p className="footer__label">Call me to set up a consultation:</p>
+          <a className="footer__phone-number" href="tel: 949-784-9719">
+            949-784-9719
           </a>
         </div>
-     </section>
+
+        <div className="footer__link--wrapper footer__link--instagram">
+          <p className="footer__label">Follow me on Instagram</p>
+          <a
+            href="https://instagram.com/jenamyjewelry"
+            target="_blank"
+            className="footer__link"
+          >
+            <img
+              src="../static/images/instagram-logo.png"
+              className="social-icon"
+            />
+          </a>
+        </div>
+      </section>
     </StyledFooter>
   );
 };
