@@ -14,8 +14,6 @@ const StyledNav = styled.nav`
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    /* font-weight: 500; */
-    /* font-size: 1em; */
     background: none;
     border: 0;
     cursor: pointer;

@@ -62,11 +62,6 @@ const Contact = () => {
 
       <div className="plx__content">
         <h3>Let's Get Started Today</h3>
-        {/* <p className="quote">
-          <i>
-            "Maybe it's not about the happy ending. Maybe it's about the story.”
-          </i>
-        </p> */}
         <p>
           The best way to get your perfect ring or completely custom jewlery is
           to call or email me. Let's talk so that I can best understand your
@@ -85,23 +80,6 @@ const Contact = () => {
           </a>
         </p>
       </div>
-      {/* 
-      <div className="plx__img-wrapper plx__img-wrapper--middle">
-        <span
-          className="backgound-image"
-          aria-label="close-up of hand wearing a diamond ring on each finger"
-        ></span>
-      </div>
-
-      <div className="plx__content">
-        <h3>Just for You</h3>
-        <p>
-          Every story is different and every journey is unique. Trust Jennifer
-          Amy Jewelry to help you create engagement and wedding rings to match
-          your one-of-a-kind love.
-        </p>
-      </div> */}
-
       <div className="plx__img-wrapper plx__img-wrapper--last">
         <span
           className="backgound-image"

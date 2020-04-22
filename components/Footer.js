@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   padding: 2rem;

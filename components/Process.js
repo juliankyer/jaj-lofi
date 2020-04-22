@@ -11,19 +11,12 @@ const StyledParallax = styled.div`
 
   .plx__img-wrapper--first {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 86%);
-    /* background-color: #15c3d1;  */
     background-image: url("/static/images/processA.jpg");
-    /* temp */
-    /* height: 400px; */
   }
 
   .plx__img-wrapper--middle {
     clip-path: polygon(0 0%, 100% 14%, 100% 100%, 0% 86%);
-    /* background-color: #15c3d1;  */
     background-image: url("/static/images/processB.jpg");
-    /* background-image: url("/static/images/processB.jpg"); */
-    /* temp */
-    /* height: 400px; */
   }
 
   .plx__img-wrapper--last {
@@ -31,8 +24,6 @@ const StyledParallax = styled.div`
     background-color: #15c3d1;
     color: #15c3d1;
     background-image: url("/static/images/processC.jpg");
-    /* temp */
-    /* height: 400px; */
   }
 
   .plx__content {
@@ -71,11 +62,6 @@ const Process = () => {
 
       <div className="plx__content">
         <h3>Completely Custom</h3>
-        {/* <p className="quote">
-          <i>
-            "Maybe it's not about the happy ending. Maybe it's about the story.”
-          </i>
-        </p> */}
         <p>
           The core value of Jennifer Amy Jewelry is to bestow the client with
           the most elegant, suited, ring. This can mean variety of things
