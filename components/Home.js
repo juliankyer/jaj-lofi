@@ -21,9 +21,24 @@ const StyledParallax = styled.div`
 
   .plx__img-wrapper--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-    background-color: #15c3d1;
-    color: #15c3d1;
     background-image: url("/static/images/heroC.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    .plx__img-wrapper {
+      height: 400px;
+    }
+    .plx__img-wrapper--first {
+      background-image: url("/static/images/heroAsmall.jpg");
+    }
+
+    .plx__img-wrapper--middle {
+      background-image: url("/static/images/heroBsmall.jpg");
+    }
+
+    .plx__img-wrapper--last {
+      background-image: url("/static/images/heroCsmall.jpg");
+    }
   }
 
   .plx__content {
