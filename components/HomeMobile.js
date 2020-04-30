@@ -5,7 +5,7 @@ const StyledParallax = styled.div`
     height: 400px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw;
     background-position: center;
   }
 
