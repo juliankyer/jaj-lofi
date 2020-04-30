@@ -28,7 +28,9 @@ const StyledParallax = styled.div`
   @media only screen and (max-width: 500px) {
     .plx__img-wrapper {
       height: 400px;
+      background-size: auto;
     }
+
     .plx__img-wrapper--first {
       background-image: url("/static/images/heroAsmall.jpg");
     }
