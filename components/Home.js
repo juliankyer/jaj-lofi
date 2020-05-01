@@ -47,6 +47,12 @@ const StyledParallax = styled.div`
       font-style: italic;
       margin: 20px 0px;
     }
+
+    @media only screen and (max-width: 600px) {
+      .plx__img-wrapper {
+        background-attachment: scroll;
+      }
+    }
   }
 `;
 
