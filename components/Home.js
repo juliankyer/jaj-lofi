@@ -5,6 +5,7 @@ const StyledParallax = styled.div`
     height: 700px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* position: fixed; */
     background-size: cover;
     background-position: center;
   }
@@ -21,9 +22,26 @@ const StyledParallax = styled.div`
 
   .plx__img-wrapper--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-    background-color: #15c3d1;
-    color: #15c3d1;
     background-image: url("/static/images/heroC.jpg");
+  }
+
+  @media only screen and (max-width: 500px) {
+    .plx__img-wrapper {
+      height: 400px;
+      background-size: auto;
+    }
+
+    .plx__img-wrapper--first {
+      background-image: url("/static/images/heroAsmall.jpg");
+    }
+
+    .plx__img-wrapper--middle {
+      background-image: url("/static/images/heroBsmall.jpg");
+    }
+
+    .plx__img-wrapper--last {
+      background-image: url("/static/images/heroCsmall.jpg");
+    }
   }
 
   .plx__content {
@@ -63,16 +81,13 @@ const Home = () => {
       <div className="plx__content">
         <h3>Welcome to Your Bespoke Jeweler</h3>
         <p className="quote">
-          <i>
-            "Maybe it's not about the happy ending. Maybe it's about the story.”
-          </i>
+          <i>"Maybe it's not about the ending. Maybe it's about the story.”</i>
         </p>
         <p>
           Every experience leaves a memory. The defining moments in life are
-          what creates an ever lasting memory. Working with Jennifer Amy will
-          create the high end personal experience that everyone dreams for,
-          using her deep connections and hand selected pieces from a private
-          jeweler.
+          what create that memory. Working with Jennifer Amy will create the
+          high end personal experience that everyone dreams for using her deep
+          connections and hand selected pieces from a private jeweler.
         </p>
       </div>
 
@@ -86,9 +101,9 @@ const Home = () => {
       <div className="plx__content">
         <h3>Just for You</h3>
         <p>
-          Every story is different and every journey is unique. Trust Jennifer
-          Amy Jewelry to help you create engagement and wedding rings to match
-          your one-of-a-kind love.
+          The core value of Jennifer Amy Jewelry is to bestow the client with
+          the most elegant, suited, ring. This can mean a variety of things
+          including color, cost, and needs.
         </p>
       </div>
 
