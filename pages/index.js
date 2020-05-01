@@ -7,11 +7,9 @@ const HomePage = () => {
     <div>
       <BrowserView>
         <Home />
-        {/* <HomeMobile /> */}
       </BrowserView>
       <MobileView>
         <HomeMobile />
-        {/* <Home /> */}
       </MobileView>
     </div>
   );
