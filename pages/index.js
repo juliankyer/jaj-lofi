@@ -5,14 +5,14 @@ import { BrowserView, MobileView } from "react-device-detect";
 const HomePage = () => {
   return (
     <div>
-      <BrowserView>
-        <Home />
-        {/* <HomeMobile /> */}
-      </BrowserView>
-      <MobileView>
-        <HomeMobile />
-        {/* <Home /> */}
-      </MobileView>
+      {/* <BrowserView> */}
+      {/* <Home /> */}
+      <HomeMobile />
+      {/* </BrowserView> */}
+      {/* <MobileView> */}
+      {/* <HomeMobile /> */}
+      {/* <Home /> */}
+      {/* </MobileView> */}
     </div>
   );
 };

@@ -7,12 +7,14 @@ const StyledParallax = styled.div`
   display: flex;
   flex-direction: column;
 
-  .img-wrapper {
+  /* .img-wrapper {
     width: 100vw;
     width: calc(var(--vw, 1vh) * 100);
-  }
+  } */
 
   #test {
+    width: 100vw;
+    height: 300px;
     background-image: url("../static/images/heroAx.jpg");
     background-position: center;
     background-attachment: scroll;
@@ -71,7 +73,7 @@ const StyledParallax = styled.div`
 const HomeMobile = () => {
   return (
     <StyledParallax>
-      <div className="img-wrapper" id="test">
+      <div className="img-wrapper plx__img--first" id="test">
         {/* <img
           src="../static/images/heroAx.jpg"
           className="plx__img plx__img--first"
