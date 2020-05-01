@@ -9,6 +9,7 @@ const StyledParallax = styled.div`
 
   .img-wrapper {
     width: 100vw;
+    width: calc(var(--vw, 1vh) * 100);
   }
 
   .plx__img {
