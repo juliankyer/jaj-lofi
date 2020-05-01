@@ -7,25 +7,23 @@ const StyledParallax = styled.div`
   display: flex;
   flex-direction: column;
 
-  .plx__img-wrapper {
-    height: 300px;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size: 100vw; */
-    /* background-position: center; */
+  .plx__img {
+    /* height: 300px; */
+    width: 100%;
+    height: auto;
   }
 
-  .plx__img-wrapper--first {
+  .plx__img--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
     /* background-image: url("/static/images/heroAsmall.jpg"); */
   }
 
-  .plx__img-wrapper--middle {
+  .plx__img--middle {
     clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
     /* background-image: url("/static/images/heroBsmall.jpg"); */
   }
 
-  .plx__img-wrapper--last {
+  .plx__img--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
     /* background-image: url("/static/images/heroCsmall.jpg"); */
   }
@@ -59,7 +57,7 @@ const HomeMobile = () => {
     <StyledParallax>
       <img
         src="../static/images/heroAsmall.jpg"
-        className="plx__img-wrapper plx__img-wrapper--first"
+        className="plx__img plx__img--first"
       />
 
       <div className="plx__content">
@@ -77,7 +75,7 @@ const HomeMobile = () => {
 
       <img
         src="../static/images/heroBsmall.jpg"
-        className="plx__img-wrapper plx__img-wrapper--middle"
+        className="plx__img plx__img--middle"
       />
 
       <div className="plx__content">
@@ -91,7 +89,7 @@ const HomeMobile = () => {
 
       <img
         src="../static/images/heroCsmall.jpg"
-        className="plx__img-wrapper plx__img-wrapper--last"
+        className="plx__img-wrapper plx__img--last"
       />
     </StyledParallax>
   );
