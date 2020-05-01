@@ -7,6 +7,10 @@ const StyledParallax = styled.div`
   display: flex;
   flex-direction: column;
 
+  .img-wrapper {
+    width: 100vw;
+  }
+
   .plx__img {
     /* height: 300px; */
     width: 100%;
@@ -55,10 +59,12 @@ const StyledParallax = styled.div`
 const HomeMobile = () => {
   return (
     <StyledParallax>
-      <img
-        src="../static/images/heroAsmall.jpg"
-        className="plx__img plx__img--first"
-      />
+      <div className="img-wrapper">
+        <img
+          src="../static/images/heroAsmall.jpg"
+          className="plx__img plx__img--first"
+        />
+      </div>
 
       <div className="plx__content">
         <h3>Welcome to Your Bespoke Jeweler</h3>
