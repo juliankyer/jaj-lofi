@@ -14,7 +14,7 @@ const StyledParallax = styled.div`
 
   .plx__img {
     /* height: 300px; */
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 
