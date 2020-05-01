@@ -1,21 +1,12 @@
 import styled from "styled-components";
-// import heroAsmall from "../static/images/heroAsmall.jpg";
-// import heroBsmall from "../static/images/heroBsmall.jpg";
-// import heroCsmall from "../static/images/heroCsmall.jpg";
 
 const StyledParallax = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* .img-wrapper {
-    width: 100vw;
-    width: calc(var(--vw, 1vh) * 100);
-  } */
-
-  #test {
+  .plx__img {
     width: 100vw;
     height: 300px;
-    background-image: url("../static/images/heroAx.jpg");
     background-position: center;
     background-attachment: scroll;
     -o-background-size: cover;
@@ -25,25 +16,19 @@ const StyledParallax = styled.div`
     background-repeat: no-repeat;
   }
 
-  /* .plx__img {
-    height: 300px;
-    width: 100vw;
-    height: auto;
-  } */
-
   .plx__img--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    /* background-image: url("/static/images/heroAsmall.jpg"); */
+    background-image: url("../static/images/heroAx.jpg");
   }
 
   .plx__img--middle {
     clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-    /* background-image: url("/static/images/heroBsmall.jpg"); */
+    background-image: url("/static/images/heroBsmall.jpg");
   }
 
   .plx__img--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-    /* background-image: url("/static/images/heroCsmall.jpg"); */
+    background-image: url("/static/images/heroCsmall.jpg");
   }
 
   .plx__content {
@@ -73,12 +58,7 @@ const StyledParallax = styled.div`
 const HomeMobile = () => {
   return (
     <StyledParallax>
-      <div className="img-wrapper plx__img--first" id="test">
-        {/* <img
-          src="../static/images/heroAx.jpg"
-          className="plx__img plx__img--first"
-        /> */}
-      </div>
+      <div className="plx__img plx__img--first"></div>
 
       <div className="plx__content">
         <h3>Welcome to Your Bespoke Jeweler</h3>
@@ -93,10 +73,7 @@ const HomeMobile = () => {
         </p>
       </div>
 
-      <img
-        src="../static/images/heroBsmall.jpg"
-        className="plx__img plx__img--middle"
-      />
+      <div className="plx__img plx__img--middle"></div>
 
       <div className="plx__content">
         <h3>Just for You</h3>
@@ -107,10 +84,7 @@ const HomeMobile = () => {
         </p>
       </div>
 
-      <img
-        src="../static/images/heroCsmall.jpg"
-        className="plx__img-wrapper plx__img--last"
-      />
+      <div className="plx__img plx__img--last"></div>
     </StyledParallax>
   );
 };
