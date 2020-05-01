@@ -18,7 +18,7 @@ const StyledParallax = styled.div`
 
   .plx__img--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("../static/images/heroAx.jpg");
+    background-image: url("../static/images/heroAsmall.jpg");
   }
 
   .plx__img--middle {

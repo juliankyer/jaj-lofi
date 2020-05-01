@@ -1,9 +1,16 @@
 import Process from "../components/Process";
+import ProcessMobile from "../components/ProcessMobile";
+import { BrowserView, MobileView } from "react-device-detect";
 
 const ProcessPage = () => {
   return (
     <div>
-      <Process />
+      <BrowserView>
+        <Process />
+      </BrowserView>
+      <MobileView>
+        <ProcessMobile />
+      </MobileView>
     </div>
   );
 };
