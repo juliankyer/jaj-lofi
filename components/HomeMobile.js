@@ -12,11 +12,22 @@ const StyledParallax = styled.div`
     width: calc(var(--vw, 1vh) * 100);
   }
 
-  .plx__img {
-    /* height: 300px; */
+  #test {
+    background-image: url("../static/images/heroAx.jpg");
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* .plx__img {
+    height: 300px;
     width: 100vw;
     height: auto;
-  }
+  } */
 
   .plx__img--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
@@ -60,11 +71,11 @@ const StyledParallax = styled.div`
 const HomeMobile = () => {
   return (
     <StyledParallax>
-      <div className="img-wrapper">
-        <img
-          src="../static/images/heroAsmall.jpg"
+      <div className="img-wrapper" id="test">
+        {/* <img
+          src="../static/images/heroAx.jpg"
           className="plx__img plx__img--first"
-        />
+        /> */}
       </div>
 
       <div className="plx__content">
