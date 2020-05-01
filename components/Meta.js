@@ -7,7 +7,7 @@ const Meta = () => (
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     ></meta>
-    <meta charset="utf-8" />
+    <meta charSet="utf-8" />
     <link rel="shortcut icon" href="/static/ja-logo.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
     <link

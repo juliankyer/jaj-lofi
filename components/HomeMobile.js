@@ -1,27 +1,33 @@
 import styled from "styled-components";
+// import heroAsmall from "../static/images/heroAsmall.jpg";
+// import heroBsmall from "../static/images/heroBsmall.jpg";
+// import heroCsmall from "../static/images/heroCsmall.jpg";
 
 const StyledParallax = styled.div`
+  display: flex;
+  flex-direction: column;
+
   .plx__img-wrapper {
-    height: 400px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw;
-    background-position: center;
+    height: 300px;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: 100vw; */
+    /* background-position: center; */
   }
 
   .plx__img-wrapper--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("/static/images/heroAsmall.jpg");
+    /* background-image: url("/static/images/heroAsmall.jpg"); */
   }
 
   .plx__img-wrapper--middle {
     clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("/static/images/heroBsmall.jpg");
+    /* background-image: url("/static/images/heroBsmall.jpg"); */
   }
 
   .plx__img-wrapper--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-    background-image: url("/static/images/heroCsmall.jpg");
+    /* background-image: url("/static/images/heroCsmall.jpg"); */
   }
 
   .plx__content {
@@ -29,7 +35,7 @@ const StyledParallax = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 25%;
+    padding: 20px 15%;
     color: $text-01;
 
     h3 {
@@ -51,12 +57,10 @@ const StyledParallax = styled.div`
 const HomeMobile = () => {
   return (
     <StyledParallax>
-      <div className="plx__img-wrapper plx__img-wrapper--first">
-        <span
-          className="backgound-image"
-          aria-label="image of blonde model with a glass of wine and diamond ring"
-        ></span>
-      </div>
+      <img
+        src="../static/images/heroAsmall.jpg"
+        className="plx__img-wrapper plx__img-wrapper--first"
+      />
 
       <div className="plx__content">
         <h3>Welcome to Your Bespoke Jeweler</h3>
@@ -71,12 +75,10 @@ const HomeMobile = () => {
         </p>
       </div>
 
-      <div className="plx__img-wrapper plx__img-wrapper--middle">
-        <span
-          className="backgound-image"
-          aria-label="close-up of hand wearing a diamond ring on each finger"
-        ></span>
-      </div>
+      <img
+        src="../static/images/heroBsmall.jpg"
+        className="plx__img-wrapper plx__img-wrapper--middle"
+      />
 
       <div className="plx__content">
         <h3>Just for You</h3>
@@ -87,12 +89,10 @@ const HomeMobile = () => {
         </p>
       </div>
 
-      <div className="plx__img-wrapper plx__img-wrapper--last">
-        <span
-          className="backgound-image"
-          aria-label="model looking at her engagement ring"
-        ></span>
-      </div>
+      <img
+        src="../static/images/heroCsmall.jpg"
+        className="plx__img-wrapper plx__img-wrapper--last"
+      />
     </StyledParallax>
   );
 };
