@@ -12,17 +12,17 @@ const StyledParallax = styled.div`
 
   .plx__img-wrapper--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("/static/images/heroA.jpg");
+    background-image: url("https://res.cloudinary.com/dp0vwnzj3/image/upload/v1588731063/jennifer-amy-jewelry/heroA_pd2jnu.jpg");
   }
 
   .plx__img-wrapper--middle {
     clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("/static/images/heroB.jpg");
+    background-image: url("https://res.cloudinary.com/dp0vwnzj3/image/upload/v1588731064/jennifer-amy-jewelry/heroB_uib4wx.jpg");
   }
 
   .plx__img-wrapper--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
-    background-image: url("/static/images/heroC.jpg");
+    background-image: url("https://res.cloudinary.com/dp0vwnzj3/image/upload/v1588731063/jennifer-amy-jewelry/heroC_qfit1q.jpg");
   }
 
   @media only screen and (max-width: 500px) {
