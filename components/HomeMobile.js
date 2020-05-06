@@ -18,7 +18,7 @@ const StyledParallax = styled.div`
 
   .plx__img--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("/static/images/heroAsmall.jpg");
+    background-image: url("https://res.cloudinary.com/dp0vwnzj3/image/upload/v1588731063/jennifer-amy-jewelry/heroAsmall_vcbex3.jpg");
   }
 
   .plx__img--middle {
