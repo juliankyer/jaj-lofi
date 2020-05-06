@@ -9,7 +9,8 @@ const HomePage = () => {
         <Home />
       </BrowserView>
       <MobileView>
-        <HomeMobile />
+        {/* <HomeMobile /> */}
+        <p>HELP</p>
       </MobileView>
     </div>
   );
