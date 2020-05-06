@@ -11,14 +11,14 @@ const StyledParallax = styled.div`
 
   .plx__img-wrapper--first {
     clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
-    background-image: url("../static/images/contactA.jpg");
+    background-image: url("/static/images/contactA.jpg");
   }
 
   .plx__img-wrapper--last {
     clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
     background-color: #15c3d1;
     color: #15c3d1;
-    background-image: url("../static/images/contactB.jpg");
+    background-image: url("/static/images/contactB.jpg");
   }
 
   .plx__content {
