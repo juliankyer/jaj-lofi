@@ -25,25 +25,6 @@ const StyledParallax = styled.div`
     background-image: url("https://res.cloudinary.com/dp0vwnzj3/image/upload/v1588731063/jennifer-amy-jewelry/heroC_qfit1q.jpg");
   }
 
-  @media only screen and (max-width: 500px) {
-    .plx__img-wrapper {
-      height: 400px;
-      background-size: auto;
-    }
-
-    .plx__img-wrapper--first {
-      background-image: url("/static/images/heroAsmall.jpg");
-    }
-
-    .plx__img-wrapper--middle {
-      background-image: url("/static/images/heroBsmall.jpg");
-    }
-
-    .plx__img-wrapper--last {
-      background-image: url("/static/images/heroCsmall.jpg");
-    }
-  }
-
   .plx__content {
     display: flex;
     flex-direction: column;
