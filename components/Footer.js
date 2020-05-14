@@ -43,6 +43,18 @@ const StyledFooter = styled.footer`
   .social-icon {
     height: 3rem;
   }
+
+  #email {
+    color: ${(props) => props.theme.brand01};
+  }
+
+  @media only screen and (max-device-width: 500px) {
+    flex-direction: column;
+
+    .footer__logo {
+      width: 100px;
+    }
+  }
 `;
 
 const Footer = () => {
@@ -52,9 +64,18 @@ const Footer = () => {
 
       <section className="footer__interactive">
         <div className="footer__link--wrapper footer__link--consult">
-          <p className="footer__label">Call me to set up a consultation:</p>
+          <p className="footer__label">
+            Call or email me to set up a consultation:
+          </p>
           <a className="footer__phone-number" href="tel: 949-784-9719">
             949-784-9719
+          </a>
+          <a
+            id="email"
+            href="mailto:info@jenniferamyjewelry.com"
+            target="_blank"
+          >
+            info@jenniferamyjewelry.com
           </a>
         </div>
 

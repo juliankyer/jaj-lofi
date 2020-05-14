@@ -75,8 +75,8 @@ const Contact = () => {
         </p>
         <p>
           Email:{"  "}
-          <a href="mailto:jenniferamydesigns@gmail.com" target="_blank">
-            jenniferamydesigns@gmail.com
+          <a href="mailto:info@jenniferamyjewelry.com" target="_blank">
+            info@jenniferamyjewelry.com
           </a>
         </p>
       </div>

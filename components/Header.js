@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Router from 'next/router';
-import NProgress from 'nprogress';
-import Nav from './Nav';
-import styled from 'styled-components';
+import Link from "next/link";
+import Router from "next/router";
+import NProgress from "nprogress";
+import Nav from "./Nav";
+import styled from "styled-components";
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -23,8 +23,8 @@ const StyledHeader = styled.header`
   right: 0;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.5);
-  display:flex;
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 
   .header-logo {
     display: flex;
@@ -37,14 +37,24 @@ const StyledHeader = styled.header`
     }
     margin: 0 20px;
   }
+
+  @media only screen and (max-device-width: 500px) {
+    background-color: rgba(255, 255, 255, 0.9);
+    a {
+      font-weight: 700;
+    }
+  }
 `;
 
 const Header = () => {
   return (
     <StyledHeader>
-      <Link href='/'>
-        <a className='header-logo' title='Home'>
-          <img src='../static/images/ja-logo.png' alt='jennifer amy jewelry logo' />
+      <Link href="/">
+        <a className="header-logo" title="Home">
+          <img
+            src="../static/images/ja-logo.png"
+            alt="jennifer amy jewelry logo"
+          />
         </a>
       </Link>
       <Nav />
