@@ -61,7 +61,7 @@ const HomeMobile = () => {
       <div className="plx__img plx__img--first"></div>
 
       <div className="plx__content">
-        <h3>Welcome to Your Bespoke Jeweler</h3>
+        <h3>MOBILE Welcome to Your Bespoke Jeweler</h3>
         <p className="quote">
           <i>"Maybe it's not about the ending. Maybe it's about the story.”</i>
         </p>

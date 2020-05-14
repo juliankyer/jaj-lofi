@@ -4,16 +4,7 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 const HomePage = ({ isMobileView }) => {
   console.log("mobile?", isMobileView);
-  return (
-    <div>
-      <BrowserView>
-        <Home />
-      </BrowserView>
-      <MobileView>
-        <HomeMobile />
-      </MobileView>
-    </div>
-  );
+  return <div>{isMobileView ? <Home /> : <HomeMobile />}</div>;
 };
 
 HomePage.getInitialProps = (ctx) => {
