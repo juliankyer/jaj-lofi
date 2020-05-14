@@ -1,18 +1,19 @@
 import Process from "../components/Process";
 import ProcessMobile from "../components/ProcessMobile";
-import { BrowserView, MobileView } from "react-device-detect";
 
-const ProcessPage = () => {
-  return (
-    <div>
-      <BrowserView>
-        <Process />
-      </BrowserView>
-      <MobileView>
-        <ProcessMobile />
-      </MobileView>
-    </div>
-  );
+const ProcessPage = ({ isMobileView }) => {
+  return <div>{isMobileView ? <ProcessMobile /> : <Process />}</div>;
+};
+
+ProcessPage.getInitialProps = (ctx) => {
+  let isMobileView = (ctx.req
+    ? ctx.req.headers["user-agent"]
+    : navigator.userAgent
+  ).match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
+
+  return {
+    isMobileView: Boolean(isMobileView),
+  };
 };
 
 export default ProcessPage;

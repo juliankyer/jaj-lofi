@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
       <div className="plx__content">
-        <h3>DESKTOP Welcome to Your Bespoke Jeweler</h3>
+        <h3>Welcome to Your Bespoke Jeweler</h3>
         <p className="quote">
           <i>"Maybe it's not about the ending. Maybe it's about the story.”</i>
         </p>

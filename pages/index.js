@@ -1,9 +1,7 @@
 import Home from "../components/Home";
 import HomeMobile from "../components/HomeMobile";
-import { BrowserView, MobileView } from "react-device-detect";
 
 const HomePage = ({ isMobileView }) => {
-  console.log("mobile?", isMobileView);
   return <div>{isMobileView ? <HomeMobile /> : <Home />}</div>;
 };
 
